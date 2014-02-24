@@ -1,0 +1,10 @@
+#!/bin/bash
+
+if [ -s $1 ]
+then 
+	gedit $1 ;
+else
+	cat includes >> $1;
+	gedit $1 ;
+fi	
+
